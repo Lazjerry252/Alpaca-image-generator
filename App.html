@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Jr Alpaca Generator</title>
+     <link rel="icon" type="image/png" href="Images/favicon.png" />
+
+     <link rel="stylesheet" href="Styles/style.css" />
+     <link rel="stylesheet" href="Styles/reset.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="name">Jr ALPACA IMAGE GENERATOR</h1>
+    </header>
+
+    <main class="main-container">
+       <div class="img-view">
+          <div class="img-container">
+              <img src="Images/alpaca/backgrounds/blue50.png" id="img-background" />
+              <img src="Images/alpaca/neck/default.png" id="img-neck" />
+              <img src="Images/alpaca/nose.png" id="img-nose" />
+              <img src="Images/alpaca/hair/default.png" id="img-hair" />
+              <img src="Images/alpaca/ears/default.png" id="img-ears" />
+              <img src="Images/alpaca/accessories/glasses.png" id="img-accessories" style="display: none;" />
+              <img src="Images/alpaca/eyes/default.png" id="img-eyes" />
+              <img src="Images/alpaca/mouth/default.png" id="img-mouth" />
+              <img src="Images/alpaca/leg/default.png" id="img-leg" />
+          </div>
+          <div class="btns-container">
+              <button class="random">Randomize</button>
+              <button class="download">Download</button>
+          </div>
+       </div>
+
+
+       <div class="customize-side">
+         <section class="sections" id="js-customize-background">
+           <h2 class="title">BACKGROUND</h2>
+           <div>
+              <button class="option">
+                <img src="Images/alpaca/backgrounds/blue50.png" />
+              </button>
+              <button class="option">
+                <img src="Images/alpaca/backgrounds/blue60.png" />
+              </button>
+              <button class="option">
+                <img src="Images/alpaca/backgrounds/blue70.png" />
+              </button>
+              <button class="option">
+                <img src="Images/alpaca/backgrounds/darkblue30.png" />
+              </button>
+              <button class="option">
+                <img src="Images/alpaca/backgrounds/darkblue50.png" />
+              </button>
+              <button class="option">
+                <img src="Images/alpaca/backgrounds/darkblue70.png" />
+              </button>
+              <button class="option">
+                <img src="Images/alpaca/backgrounds/green50.png" />
+              </button>
+              <button class="option">
+                <img src="Images/alpaca/backgrounds/green60.png" />
+              </button>
+              <button class="option">
+                <img src="Images/alpaca/backgrounds/green70.png" />
+              </button>
+              <button class="option">
+                <img src="Images/alpaca/backgrounds/grey40.png" />
+              </button>
+              <button class="option">
+                <img src="Images/alpaca/backgrounds/grey70.png" />
+              </button>
+              <button class="option">
+                <img src="Images/alpaca/backgrounds/grey80.png" />
+              </button>
+              <button class="option">
+                <img src="Images/alpaca/backgrounds/red50.png" />
+              </button>
+              <button class="option">
+                <img src="Images/alpaca/backgrounds/red60.png" />
+              </button>
+              <button class="option">
+                <img src="Images/alpaca/backgrounds/red70.png" />
+              </button>
+              <button class="option">
+                <img src="Images/alpaca/backgrounds/yellow50.png" />
+              </button>
+              <button class="option">
+                <img src="Images/alpaca/backgrounds/yellow60.png" />
+              </button>
+              <button class="option">
+                <img src="Images/alpaca/backgrounds/yellow70.png" />
+              </button>
+           </div>
+         </section>
+
+         <section class="sections" id="js-customize-neck">
+             <h2 class="title">NECK</h2>
+             <div>
+                <button class="option">
+                  <img src="Images/alpaca/neck/bend-backward.png" />
+                </button>
+                <button class="option">
+                  <img src="Images/alpaca/neck/bend-forward.png" />
+                </button>
+                <button class="option">
+                  <img src="Images/alpaca/neck/default.png" />
+                </button>
+                <button class="option">
+                  <img src="Images/alpaca/neck/thick.png" />
+                </button>
+             </div>
+         </section>
+
+         <section class="sections" id="js-customize-hair">
+              <h2 class="title">HAIR</h2>
+              <div>
+                  <button class="option">
+                    <img src="Images/alpaca/hair/bang.png" />
+                  </button>
+                  <button class="option">
+                    <img src="Images/alpaca/hair/curls.png" />
+                  </button>
+                  <button class="option">
+                    <img src="Images/alpaca/hair/default.png" />
+                  </button>
+                  <button class="option">
+                    <img src="Images/alpaca/hair/elegant.png" />
+                  </button>
+                  <button class="option">
+                    <img src="Images/alpaca/hair/fancy.png" />
+                  </button>
+                  <button class="option">
+                    <img src="Images/alpaca/hair/quiff.png" />
+                  </button>
+                  <button class="option">
+                    <img src="Images/alpaca/hair/short.png" />
+                  </button>
+              </div>
+         </section>
+
+         <section class="sections" id="js-customize-ears">
+             <h2 class="title">EARS</h2>
+             <div>
+                <button class="option">
+                  <img src="Images/alpaca/ears/default.png" />
+                </button>
+                <button class="option">
+                  <img src="Images/alpaca/ears/tilt-backward.png" />
+                </button>
+                <button class="option">
+                  <img src="Images/alpaca/ears/tilt-forward.png" />
+                </button>
+             </div>
+         </section>
+
+         <section class="sections" id="js-customize-accessories">
+             <h2 class="title">ACCESSORIES</h2>
+             <div>
+                <button class="option option-dont">
+                  <span class="symbols-outlined"> close </span>
+                </button>
+                <button class="option">
+                  <img src="Images/alpaca/accessories/earings.png" />
+                </button>
+                <button class="option">
+                  <img src="Images/alpaca/accessories/flower.png" />
+                </button>
+                <button class="option">
+                  <img src="Images/alpaca/accessories/glasses.png" />
+                </button>
+                <button class="option">
+                  <img src="Images/alpaca/accessories/headphone.png" />
+                </button>
+             </div>
+         </section>
+
+         <section class="sections" id="js-customize-eyes">
+             <h2 class="title">EYES</h2>
+             <div>
+                <button class="option">
+                  <img src="Images/alpaca/eyes/angry.png" />
+                </button>
+                <button class="option">
+                  <img src="Images/alpaca/eyes/default.png" />
+                </button>
+                <button class="option">
+                  <img src="Images/alpaca/eyes/naughty.png" />
+                </button>
+                <button class="option">
+                  <img src="Images/alpaca/eyes/panda.png" />
+                </button>
+                <button class="option">
+                  <img src="Images/alpaca/eyes/smart.png" />
+                </button>
+                <button class="option">
+                  <img src="Images/alpaca/eyes/star.png" />
+                </button>
+             </div>
+         </section>
+
+         <section class="sections" id="js-customize-mouth">
+             <h2 class="title">MOUTH</h2>
+             <div>
+                <button class="option">
+                  <img src="Images/alpaca/mouth/astonished.png" />
+                </button>
+                <button class="option">
+                  <img src="Images/alpaca/mouth/default.png" />
+                </button>
+                <button class="option">
+                  <img src="Images/alpaca/mouth/eating.png" />
+                </button>
+                <button class="option">
+                  <img src="Images/alpaca/mouth/laugh.png" />
+                </button>
+                <button class="option">
+                  <img src="Images/alpaca/mouth/tongue.png" />
+                </button>
+             </div>
+         </section>
+
+         <section class="sections" id="js-customize-leg">
+             <h2 class="title">LEG</h2>
+             <div>
+                <button class="option">
+                  <img src="Images/alpaca/leg/bubble-tea.png" />
+                </button>
+                <button class="option">
+                  <img src="Images/alpaca/leg/cookie.png" />
+                </button>
+                <button class="option">
+                  <img src="Images/alpaca/leg/default.png" />
+                </button>
+                <button class="option">
+                  <img src="Images/alpaca/leg/game-console.png" />
+                </button>
+                <button class="option">
+                  <img src="Images/alpaca/leg/tilt-backward.png" />
+                </button>
+                <button class="option">
+                  <img src="Images/alpaca/leg/tilt-forward.png" />
+                </button>
+             </div>
+         </section>
+
+       </div>
+
+    </main>
+
+     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+     <script src="App.js"></script>
+  </body>
+</html>

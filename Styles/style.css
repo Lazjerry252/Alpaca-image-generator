@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
+
+.img-view {
+  min-width: max-content;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--background);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+header {
+  background-color: rgb(163, 163, 229);
+  height: 50px;
+}
+
+.name {
+  font-family: Impact;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: rgb(244, 45, 45);
+  padding-top: 1.9px;
+  padding-left: 15px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  height: 100%;
+  overflow: hidden;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.img-container img {
+  position: absolute;
+  width: 100%;
+}
+
+.btns-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.btns-container button {
+  width: 100%;
+  padding: 0.8rem 0.5rem;
+  border-radius: 8px;
+  border-color: gold;
+  border-style: double;
+  border-width: 4px;
+  background-color: green;
+  color: #fff;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.btns-container button:hover {
+  background-color: #fff;
+  color: green;
+}
+
+.customize-side {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-height: 100%;
+  overflow: auto;
+
+  background-color: rgb(54, 54, 194);
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sections div {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+.sections div button {
+  border-width: 5px;
+  border-style: groove;
+}
+
+.option {
+  aspect-ratio: 1;
+  padding-top: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  background: none;
+  cursor: pointer;
+}
+
+.option img {
+  width: 100%;
+}
+
+.title {
+  font-family: Arial;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+@media screen and (min-width: 768px) {
+    .main-container {
+       flex-direction: row;
+       justify-content: space-around;
+    }
+    .img-view {
+       min-width: max-content;
+       width: 25px;
+    }
+    .customize-side {
+       width: 50%;
+       height: 80%;
+       padding: 1.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+  .name {
+    font-size: 25px;
+    padding-top: 10px;
+  }
+}
